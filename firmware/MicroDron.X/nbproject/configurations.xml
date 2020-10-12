@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HAL" displayName="HAL" projectFiles="true">
+      <itemPath>../MicroDrone-Firmware/HAL/tof.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/HAL/comms.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/HAL/motors.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/HAL/imu.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="default" projectFiles="true">
+          <logicalFolder name="f4" displayName="driver" projectFiles="true">
+            <logicalFolder name="f1" displayName="usb" projectFiles="true">
+              <logicalFolder name="f1" displayName="usbhs" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <logicalFolder name="f1" displayName="templates" projectFiles="true">
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_registers.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_ClockResetControl_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_ClockResetControl_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_EndpointFIFO_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_EndpointFIFO_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_EndpointOperations_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_EndpointOperations_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_EP0Status_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_EP0Status_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_HighSpeedSupport_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_HighSpeedSupport_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_Interrupts_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_Interrupts_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_ModuleControl_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_ModuleControl_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_RxEPStatus_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_RxEPStatus_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_SoftReset_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_SoftReset_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_TxEPStatus_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_TxEPStatus_Unsupported.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_USBIDControl_Default.h</itemPath>
+                    <itemPath>../src/config/default/driver/usb/usbhs/src/templates/usbhs_USBIDControl_Unsupported.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/drv_usbhs_variant_mapping.h</itemPath>
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/drv_usbhs_local.h</itemPath>
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/plib_usbhs.h</itemPath>
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/plib_usbhs_header.h</itemPath>
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/usbhs_registers.h</itemPath>
+                </logicalFolder>
+                <itemPath>../src/config/default/driver/usb/usbhs/drv_usbhs.h</itemPath>
+              </logicalFolder>
+              <itemPath>../src/config/default/driver/usb/drv_usb.h</itemPath>
+              <itemPath>../src/config/default/driver/usb/drv_usb_external_dependencies.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/default/driver/driver.h</itemPath>
+            <itemPath>../src/config/default/driver/driver_common.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/default/osal/osal.h</itemPath>
+            <itemPath>../src/config/default/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/default/osal/osal_freertos.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f4" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/cache/plib_cache.h</itemPath>
+              <itemPath>../src/config/default/peripheral/cache/plib_cache_pic32mz.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/clk/plib_clk.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="coretimer" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/coretimer/plib_coretimer.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="dmac" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/dmac/plib_dmac.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="evic" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/evic/plib_evic.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/gpio/plib_gpio.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="ocmp" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp_common.h</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp6.h</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp4.h</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp5.h</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp3.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f9" displayName="tmr" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/tmr/plib_tmr_common.h</itemPath>
+              <itemPath>../src/config/default/peripheral/tmr/plib_tmr2.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="uart" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/uart/plib_uart_common.h</itemPath>
+              <itemPath>../src/config/default/peripheral/uart/plib_uart1.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="system" projectFiles="true">
+            <logicalFolder name="f4" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/default/system/cache/sys_cache.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="console" projectFiles="true">
+              <itemPath>../src/config/default/system/console/sys_console.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="debug" projectFiles="true">
+              <itemPath>../src/config/default/system/debug/sys_debug.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="dma" projectFiles="true">
+              <itemPath>../src/config/default/system/dma/sys_dma.h</itemPath>
+              <itemPath>../src/config/default/system/dma/sys_dma_mapping.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="int" projectFiles="true">
+              <itemPath>../src/config/default/system/int/sys_int.h</itemPath>
+              <itemPath>../src/config/default/system/int/sys_int_mapping.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="time" projectFiles="true">
+              <itemPath>../src/config/default/system/time/sys_time.h</itemPath>
+              <itemPath>../src/config/default/system/time/sys_time_definitions.h</itemPath>
+              <itemPath>../src/config/default/system/time/src/sys_time_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/default/system/system.h</itemPath>
+            <itemPath>../src/config/default/system/system_common.h</itemPath>
+            <itemPath>../src/config/default/system/system_module.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../src/config/default/usb/src/usb_device_cdc_local.h</itemPath>
+              <itemPath>../src/config/default/usb/src/usb_device_local.h</itemPath>
+              <itemPath>../src/config/default/usb/src/usb_device_mapping.h</itemPath>
+              <itemPath>../src/config/default/usb/src/usb_device_function_driver.h</itemPath>
+              <itemPath>../src/config/default/usb/src/usb_external_dependencies.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/default/usb/usb_device_cdc.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_cdc.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_device.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_common.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_chapter_9.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_host_client_driver.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_host_hub_interface.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_host.h</itemPath>
+            <itemPath>../src/config/default/usb/usb_hub.h</itemPath>
+          </logicalFolder>
+          <itemPath>../src/config/default/device_cache.h</itemPath>
+          <itemPath>../src/config/default/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/default/definitions.h</itemPath>
+          <itemPath>../src/config/default/device.h</itemPath>
+          <itemPath>../src/config/default/FreeRTOSConfig.h</itemPath>
+          <itemPath>../src/config/default/user.h</itemPath>
+          <itemPath>../src/config/default/configuration.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="f1" displayName="Source" projectFiles="true">
+          <logicalFolder name="f1" displayName="include" projectFiles="true">
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/croutine.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/event_groups.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/list.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/portable.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/queue.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/semphr.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/task.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/timers.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="portable" projectFiles="true">
+            <logicalFolder name="f1" displayName="MPLAB" projectFiles="true">
+              <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
+                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/portmacro.h</itemPath>
+                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/ISR_Support.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/blink_led_thread.h</itemPath>
+      <itemPath>../src/heartbeat_led_task.h</itemPath>
+      <itemPath>../src/mavlinkrecvtask.h</itemPath>
+      <itemPath>../src/mavlinksendtask.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="default" projectFiles="true">
+          <itemPath>../src/config/default/p32MZ2048EFM144.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="Control" displayName="Control" projectFiles="true">
+          <logicalFolder name="StateSpace" displayName="StateSpace" projectFiles="true">
+            <itemPath>../MicroDrone-Firmware/src/Control/StateSpace/SixDOFQuadcopterModel.h</itemPath>
+            <itemPath>../MicroDrone-Firmware/src/Control/StateSpace/SixDOFQuadcopterModel.c</itemPath>
+          </logicalFolder>
+          <itemPath>../MicroDrone-Firmware/src/Control/SensFusion.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/PositionEstimatorAltitude.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/ComplementaryFilter.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/SensFusion.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/PID.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/ComplementaryFilter.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/AttitudeController.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/PID.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/PositionEstimatorAltitude.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Control/AttitudeController.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="DataTypes" displayName="DataTypes" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/src/DataTypes/ControlTypes.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="MAVLink" displayName="MAVLink" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/src/MAVLink/MAVLinkSender.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/MAVLink/MAVLinkHandler.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/MAVLink/MAVLinkSender.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/MAVLink/MAVLinkHandler.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Tasks" displayName="Tasks" projectFiles="true">
+          <logicalFolder name="AttitudeControllerTask"
+                         displayName="AttitudeControllerTask"
+                         projectFiles="true">
+            <itemPath>../MicroDrone-Firmware/src/Tasks/AttitudeControllerTask/AttitudeControllerTask.h</itemPath>
+            <itemPath>../MicroDrone-Firmware/src/Tasks/AttitudeControllerTask/AttitudeControllerTask.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="MAVLink" displayName="MAVLink" projectFiles="true">
+            <itemPath>../MicroDrone-Firmware/src/Tasks/MAVLink/MAVLinkSendTask.c</itemPath>
+            <itemPath>../MicroDrone-Firmware/src/Tasks/MAVLink/MAVLinkSendTask.h</itemPath>
+            <itemPath>../MicroDrone-Firmware/src/Tasks/MAVLink/MAVLinkRecvTask.c</itemPath>
+            <itemPath>../MicroDrone-Firmware/src/Tasks/MAVLink/MAVLinkRecvTask.h</itemPath>
+          </logicalFolder>
+          <itemPath>../MicroDrone-Firmware/src/Tasks/MAVStatusTask.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Tasks/TOFUpdateTask.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Tasks/MAVStatusTask.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Tasks/IMUUpdateTask.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Tasks/TOFUpdateTask.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Tasks/IMUUpdateTask.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Utils" displayName="Utils" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/src/Utils/num.c</itemPath>
+          <itemPath>../MicroDrone-Firmware/src/Utils/num.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="Math" displayName="Math" projectFiles="true">
+      <logicalFolder name="MAVLinkV2" displayName="MAVLinkV2" projectFiles="true">
+        <logicalFolder name="ardupilotmega"
+                       displayName="ardupilotmega"
+                       projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_device_op_write_reply.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_remote_log_block_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_mount_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_mount_configure.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/ardupilotmega.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_ap_adc.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_autopilot_version_request.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_mount_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gopro_heartbeat.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_rpm.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gopro_get_request.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_sensor_offsets.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_data64.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_fence_fetch_point.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_data16.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_device_op_read.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_deepstall.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_mag_cal_progress.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gimbal_torque_cmd_report.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_airspeed_autocal.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_set_mag_offsets.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_radio.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_device_op_write.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_esc_telemetry_1_to_4.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_camera_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_ahrs2.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_meminfo.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gimbal_report.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_digicam_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_remote_log_data_block.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_esc_telemetry_9_to_12.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_ekf_status_report.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_device_op_read_reply.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_camera_feedback.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_pid_tuning.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_compassmot_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gimbal_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_aoa_ssa.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_rangefinder.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_efi_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_digicam_configure.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_fence_point.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gopro_set_response.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_esc_telemetry_5_to_8.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_ahrs3.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_rally_fetch_point.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_led_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gopro_get_response.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_simstate.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_wind.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_rally_point.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_data32.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_adap_tuning.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_battery2.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_gopro_set_request.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_hwstatus.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_data96.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_vision_position_delta.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_limits_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_mag_cal_report.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/version.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ardupilotmega/mavlink_msg_ahrs.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="ASLUAV" displayName="ASLUAV" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_sens_power_board.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_command_long_stamped.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_aslctrl_debug.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_sensorpod_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_sens_power.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_fw_soaring_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/ASLUAV.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_sens_mppt.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_sens_batmon.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_sens_atmos.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_asluav_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_aslctrl_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_command_int_stamped.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_asl_obctrl.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_gsm_link_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink_msg_ekf_ext.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/ASLUAV/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="autoquad" displayName="autoquad" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/autoquad/mavlink_msg_aq_esc_telemetry.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/autoquad/mavlink_msg_aq_telemetry_f.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/autoquad/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/autoquad/autoquad.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/autoquad/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/autoquad/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="common" displayName="common" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_rc_channels_override.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_optical_flow.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_map_rc.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_actuator_control_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_highres_imu.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_scaled_pressure2.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_orbit_execution_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_data_stream.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_location.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mount_orientation.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_trajectory_representation_bezier.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_home_position.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_tunnel.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_raw_imu.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_cellular_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_vfr_hud.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_autopilot_state_for_gimbal_device.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_raw_pressure.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_device_set_attitude.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_video_stream_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_actuator_output_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_request_list.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_wheel_distance.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_request_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_statustext.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_mode.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_rtk.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_trigger.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_esc_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_manual_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_manager_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_attitude_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_generator_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_control_system_state.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_item.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_log_request_end.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_wind_cov.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_radio_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_attitude_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_distance_sensor.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_position_target_global_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_flight_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_actuator_control_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_value_trimmed.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_request.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_uavcan_node_info.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_attitude_quaternion.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_count.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_message_pack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_scaled_imu2.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_start_transaction.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_high_latency.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_high_latency2.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_time_estimate_to_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_request_data_stream.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_landing_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_smart_battery_info.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_button_change.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_log_entry.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_system.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_capture_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_optical_flow.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_controls.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_vision_speed_estimate.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_attitude_quaternion_cov.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ack_transaction.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_tracking_geo_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_optical_flow_rad.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_heartbeat.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_ais_vessel.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_vision_position_estimate.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_command_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_value.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_request_read.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_scaled_imu3.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_cellular_config.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_current.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_data_transmission_handshake.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_setup_signing.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_winch_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_value.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_isbd_link_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_uavcan_node_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_set_current.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_request_list.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_set_trimmed.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_global_origin.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_adsb_vehicle.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_manual_setpoint.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_authentication.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_log_erase.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_protocol_version.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_device_attitude_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_video_stream_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_encapsulated_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_state_quaternion.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_wifi_config_ap.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_logging_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_sys_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_request_partial_list.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_position_target_local_ned.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_system_time.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_extended_sys_state.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_log_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_global_position_int_cov.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_resource_request.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_actuator_controls.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_set.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_debug_float_array.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_component_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_memory_vect.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_smart_battery_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_fence_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_onboard_computer_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_rc_channels.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_raw_rpm.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_gps_global_origin.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_debug.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/common.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_set_position_target_global_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_inject_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_battery_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_att_pos_mocap.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_autopilot_version.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_settings.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_global_position_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_odometry.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_named_value_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_obstacle_distance.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_rc_channels_raw.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_follow_target.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_commit_transaction.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_write_partial_list.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_scaled_imu.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_request_read.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_change_operator_control_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_safety_allowed_area.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_terrain_report.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_rc_channels_scaled.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_link_node_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_rc_inputs_raw.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_input.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_global_vision_position_estimate.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_tracking_image_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_power_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_gps.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_logging_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_auth_key.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_command_cancel.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_terrain_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_log_request_list.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_timesync.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_sim_state.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_sensor.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_estimator_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_set.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_vibration.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_rtcm_data.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_operator_id.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_command_long.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps2_rtk.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_change_operator_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_altitude.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_manager_set_tiltpan.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_serial_control.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_collision.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_command_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_home_position.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_changed.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_file_transfer_protocol.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_debug_vect.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_local_position_ned_cov.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_message_interval.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_storage_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_basic_id.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps_raw_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_scaled_pressure.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_manager_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_hil_state.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gps2_raw.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_play_tune_v2.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_clear_all.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_supported_tunes.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_safety_set_allowed_area.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_scaled_pressure3.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_trajectory_representation_waypoints.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_servo_output_raw.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_device_information.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_terrain_request.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_nav_controller_output.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_position_target_local_ned.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_item_reached.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_image_captured.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_gimbal_manager_set_attitude.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_open_drone_id_self_id.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_v2_extension.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_named_value_float.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_terrain_check.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_ping.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_attitude.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_play_tune.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_camera_fov_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_mission_item_int.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/version.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_utm_global_position.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_ext_ack_trimmed.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_vicon_position_estimate.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_esc_info.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_param_request_list.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_local_position_ned.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_local_position_ned_system_global_offset.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_logging_data_acked.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/common/mavlink_msg_log_request_data.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="icarous" displayName="icarous" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/icarous/icarous.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/icarous/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/icarous/mavlink_msg_icarous_kinematic_bands.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/icarous/mavlink_msg_icarous_heartbeat.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/icarous/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/icarous/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="matrixpilot" displayName="matrixpilot" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f15.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_set.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f20.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f13.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f4.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_directory_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f8.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_command.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_buffer_function.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f5.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f19.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_command_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f2_a.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_buffer_function_ack.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f6.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f2_b.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_altitudes.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f16.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f17.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f18.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f14.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f22.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_airspeeds.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/matrixpilot.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_directory.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_flexifunction_read_req.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f21.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/mavlink_msg_serial_udb_extra_f7.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/matrixpilot/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="message_definitions"
+                       displayName="message_definitions"
+                       projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="minimal" displayName="minimal" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/minimal/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/minimal/mavlink_msg_heartbeat.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/minimal/mavlink_msg_protocol_version.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/minimal/minimal.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/minimal/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/minimal/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="slugs" displayName="slugs" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_uav_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_sensor_bias.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_cpu_load.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_data_log.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_isr_location.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_slugs_navigation.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_slugs_configuration_camera.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_ctrl_srfc_pt.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_slugs_mobile_location.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_diagnostic.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_gps_date_time.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/slugs.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_volt_sensor.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_sensor_diag.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_slugs_camera_order.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_novatel_diag.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_ptz_status.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_control_surface.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_mid_lvl_cmds.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_status_gps.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink_msg_boot.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/slugs/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="standard" displayName="standard" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/standard/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/standard/standard.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/standard/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/standard/version.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="uAvionix" displayName="uAvionix" projectFiles="true">
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/testsuite.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/uAvionix.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/mavlink_msg_uavionix_adsb_out_cfg.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/mavlink_msg_uavionix_adsb_out_dynamic.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/mavlink.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/version.h</itemPath>
+          <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/uAvionix/mavlink_msg_uavionix_adsb_transceiver_health_report.h</itemPath>
+        </logicalFolder>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/mavlink_helpers.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/mavlink_sha256.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/mavlink_get_info.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/mavlink_conversions.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/mavlink_types.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/protocol.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/libs/MAVLinkV2/checksum.h</itemPath>
+      </logicalFolder>
+      <itemPath>../MicroDrone-Firmware/libs/Math/Quaternion.c</itemPath>
+      <itemPath>../MicroDrone-Firmware/libs/Math/Twist3D.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/libs/Math/Vector3D.c</itemPath>
+      <itemPath>../MicroDrone-Firmware/libs/Math/Pose3D.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/libs/Math/Vector3D.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/libs/Math/Quaternion.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="default" projectFiles="true">
+          <logicalFolder name="f5" displayName="driver" projectFiles="true">
+            <logicalFolder name="f1" displayName="usb" projectFiles="true">
+              <logicalFolder name="f1" displayName="usbhs" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/drv_usbhs.c</itemPath>
+                  <itemPath>../src/config/default/driver/usb/usbhs/src/drv_usbhs_device.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/default/osal/osal_freertos.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f4" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/cache/plib_cache_local.h</itemPath>
+              <itemPath>../src/config/default/peripheral/cache/plib_cache.c</itemPath>
+              <itemPath>../src/config/default/peripheral/cache/plib_cache_pic32mz.S</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/clk/plib_clk.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="coretimer" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/coretimer/plib_coretimer.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="dmac" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/dmac/plib_dmac.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="evic" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/evic/plib_evic.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/gpio/plib_gpio.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="ocmp" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp6.c</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp4.c</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp5.c</itemPath>
+              <itemPath>../src/config/default/peripheral/ocmp/plib_ocmp3.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f9" displayName="tmr" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/tmr/plib_tmr2.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="uart" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/uart/plib_uart1.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="stdio" projectFiles="true">
+            <itemPath>../src/config/default/stdio/xc32_monitor.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="system" projectFiles="true">
+            <logicalFolder name="f5" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/default/system/cache/sys_cache.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="console" projectFiles="true">
+              <itemPath>../src/config/default/system/console/src/sys_console_usb_cdc.h</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console_usb_cdc_definitions.h</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console_usb_cdc.c</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console.c</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console_local.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="debug" projectFiles="true">
+              <itemPath>../src/config/default/system/debug/src/sys_debug_local.h</itemPath>
+              <itemPath>../src/config/default/system/debug/src/sys_debug.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="dma" projectFiles="true">
+              <itemPath>../src/config/default/system/dma/sys_dma.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="int" projectFiles="true">
+              <itemPath>../src/config/default/system/int/src/sys_int.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="time" projectFiles="true">
+              <itemPath>../src/config/default/system/time/src/sys_time.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../src/config/default/usb/src/usb_device_cdc.c</itemPath>
+              <itemPath>../src/config/default/usb/src/usb_device_cdc_acm.c</itemPath>
+              <itemPath>../src/config/default/usb/src/usb_device.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../src/config/default/initialization.c</itemPath>
+          <itemPath>../src/config/default/interrupts.c</itemPath>
+          <itemPath>../src/config/default/interrupts_a.S</itemPath>
+          <itemPath>../src/config/default/exceptions.c</itemPath>
+          <itemPath>../src/config/default/usb_device_init_data.c</itemPath>
+          <itemPath>../src/config/default/freertos_hooks.c</itemPath>
+          <itemPath>../src/config/default/tasks.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <logicalFolder name="Control" displayName="Control" projectFiles="true">
+            <logicalFolder name="StateSpace" displayName="StateSpace" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="DataTypes" displayName="DataTypes" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="MAVLink" displayName="MAVLink" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="Tasks" displayName="Tasks" projectFiles="true">
+            <logicalFolder name="AttitudeControllerTask"
+                           displayName="AttitudeControllerTask"
+                           projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="MAVLink" displayName="MAVLink" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="MPCTask" displayName="MPCTask" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="Utils" displayName="Utils" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="f1" displayName="Source" projectFiles="true">
+          <logicalFolder name="f1" displayName="portable" projectFiles="true">
+            <logicalFolder name="f1" displayName="MemMang" projectFiles="true">
+              <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="MPLAB" projectFiles="true">
+              <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
+                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/port.c</itemPath>
+                <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/port_asm.S</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/croutine.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/list.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/queue.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/timers.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/event_groups.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="Control" displayName="Control" projectFiles="true">
+          <logicalFolder name="StateSpace" displayName="StateSpace" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="DataTypes" displayName="DataTypes" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="MAVLink" displayName="MAVLink" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="Tasks" displayName="Tasks" projectFiles="true">
+          <logicalFolder name="AttitudeControllerTask"
+                         displayName="AttitudeControllerTask"
+                         projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="MAVLink" displayName="MAVLink" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="MPCTask" displayName="MPCTask" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="Utils" displayName="Utils" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/main.c</itemPath>
+      <itemPath>../src/blink_led_thread.c</itemPath>
+      <itemPath>../src/heartbeat_led_task.c</itemPath>
+      <itemPath>../src/mavlinkrecvtask.c</itemPath>
+      <itemPath>../src/mavlinksendtask.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/default/harmony.prj</itemPath>
+      <itemPath>../src/config/default/default.xml</itemPath>
+      <itemPath>../src/config/default/harmony-manifest-success.yml</itemPath>
+    </logicalFolder>
+    <itemPath>../src/HAL/comms.c</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../src</Elem>
+    <Elem>../MicroDrone-Firmware/HAL</Elem>
+    <Elem>../MicroDrone-Firmware/src</Elem>
+    <Elem>../MicroDrone-Firmware/libs/Math</Elem>
+    <Elem>../MicroDrone-Firmware/libs/MAVLinkV2</Elem>
+    <Elem>../MicroDrone-Firmware/libs/UDPLib</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MZ2048EFM144</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>snap</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>2.40</languageToolchainVersion>
+        <platform>2</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC32MZ-EF_DFP" vendor="Microchip" version="1.2.51"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="true"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src;../src/config/default;../src/packs/PIC32MZ2048EFM144_DFP;../MicroDrone-Firmware/src;../MicroDrone-Firmware/libs/Math;../MicroDrone-Firmware/libs/MAVLinkV2/standard;../MicroDrone-Firmware/HAL"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="true"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler"
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/default;"/>
+        <property key="extra-include-directories-for-preprocessor"
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src/config/default;"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
+      <C32-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="additional-options-write-sla" value="false"/>
+        <property key="allocate-dinit" value="false"/>
+        <property key="code-dinit" value="false"/>
+        <property key="ebase-addr" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="heap-size" value="1024"/>
+        <property key="input-libraries" value=""/>
+        <property key="kseg-length" value=""/>
+        <property key="kseg-origin" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
+        <property key="no-device-startup-code" value="true"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="oXC32ld-extra-opts" value=""/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="true"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="serial-length" value=""/>
+        <property key="serial-origin" value=""/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="check-new" value="false"/>
+        <property key="eh-specs" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exceptions" value="true"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/rtos/FreeRTOS/Source/include;../src;../src/config/default;../src/packs/PIC32MZ2048EFM144_DFP"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="true"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="rtti" value="true"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32CPP>
+      <C32Global>
+        <property key="common-include-directories" value=""/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="false"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="omit-pack-options" value="1"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
+      <PICkit3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CHANGE NOTICE" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="CTMU" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C2" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="SPI/I2S 1" value="true"/>
+        <property key="SPI/I2S 2" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x1d003fff"/>
+        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x1d003fff"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </PICkit3PlatformTool>
+      <snap>
+        <property key="ADC" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CAN1" value="true"/>
+        <property key="CAN2" value="true"/>
+        <property key="CHANGE NOTICE A" value="true"/>
+        <property key="CHANGE NOTICE B" value="true"/>
+        <property key="CHANGE NOTICE C" value="true"/>
+        <property key="CHANGE NOTICE D" value="true"/>
+        <property key="CHANGE NOTICE E" value="true"/>
+        <property key="CHANGE NOTICE F" value="true"/>
+        <property key="CHANGE NOTICE G" value="true"/>
+        <property key="CHANGE NOTICE H" value="true"/>
+        <property key="CHANGE NOTICE J" value="true"/>
+        <property key="CHANGE NOTICE K" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C 1" value="true"/>
+        <property key="I2C 2" value="true"/>
+        <property key="I2C 3" value="true"/>
+        <property key="I2C 4" value="true"/>
+        <property key="I2C 5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INPUT CAPTURE 6" value="true"/>
+        <property key="INPUT CAPTURE 7" value="true"/>
+        <property key="INPUT CAPTURE 8" value="true"/>
+        <property key="INPUT CAPTURE 9" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="OUTPUT COMPARE 6" value="true"/>
+        <property key="OUTPUT COMPARE 7" value="true"/>
+        <property key="OUTPUT COMPARE 8" value="true"/>
+        <property key="OUTPUT COMPARE 9" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="REFERENCE CLOCK1" value="true"/>
+        <property key="REFERENCE CLOCK2" value="true"/>
+        <property key="REFERENCE CLOCK3" value="true"/>
+        <property key="REFERENCE CLOCK4" value="true"/>
+        <property key="SPI/I2S 1" value="true"/>
+        <property key="SPI/I2S 2" value="true"/>
+        <property key="SPI/I2S 3" value="true"/>
+        <property key="SPI/I2S 4" value="true"/>
+        <property key="SPI/I2S 5" value="true"/>
+        <property key="SPI/I2S 6" value="true"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="TIMER6" value="true"/>
+        <property key="TIMER7" value="true"/>
+        <property key="TIMER8" value="true"/>
+        <property key="TIMER9" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="communication.interface" value=""/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="${communication.speed.default}"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Max"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="programoptionsedbg.eraseb4program" value="true"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+      </snap>
+    </conf>
+  </confs>
+</configurationDescriptor>

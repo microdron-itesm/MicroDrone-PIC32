@@ -1,0 +1,3 @@
+[submodule "firmware/MicroDrone-Firmware"]
+	path = firmware/MicroDrone-Firmware
+	url = git@github.com:microdron-itesm/MicroDrone-Firmware.git
