@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    mavlinkrecvtask.c
+    attitudecontroller.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,8 +27,9 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "mavlinkrecvtask.h"
-#include "Tasks/MAVLink/MAVLinkRecvTask.h"
+#include "attitudecontroller.h"
+#include "Tasks/AttitudeControllerTask/AttitudeControllerTask.h"
+#include "motors.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -46,12 +47,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the MAVLINKRECVTASK_Initialize function.
+    This structure should be initialized by the ATTITUDECONTROLLER_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
+ATTITUDECONTROLLER_DATA attitudecontrollerData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -81,57 +82,59 @@ MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
 
 /*******************************************************************************
   Function:
-    void MAVLINKRECVTASK_Initialize ( void )
+    void ATTITUDECONTROLLER_Initialize ( void )
 
   Remarks:
-    See prototype in mavlinkrecvtask.h.
+    See prototype in attitudecontroller.h.
  */
 
-void MAVLINKRECVTASK_Initialize ( void )
+void ATTITUDECONTROLLER_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    mavlinkrecvtaskData.state = MAVLINKRECVTASK_STATE_INIT;
+    attitudecontrollerData.state = ATTITUDECONTROLLER_STATE_INIT;
 
 
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
+    hal_motors_init();
 }
 
 
 /******************************************************************************
   Function:
-    void MAVLINKRECVTASK_Tasks ( void )
+    void ATTITUDECONTROLLER_Tasks ( void )
 
   Remarks:
-    See prototype in mavlinkrecvtask.h.
+    See prototype in attitudecontroller.h.
  */
 
-void MAVLINKRECVTASK_Tasks ( void )
+void ATTITUDECONTROLLER_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( mavlinkrecvtaskData.state )
+    switch ( attitudecontrollerData.state )
     {
         /* Application's initial state. */
-        case MAVLINKRECVTASK_STATE_INIT:
+        case ATTITUDECONTROLLER_STATE_INIT:
         {
             bool appInitialized = true;
-            
-            MAVLinkRecv_Init(NULL);
-            
+
+            AttitudeController_Init(NULL);
+
             if (appInitialized)
             {
 
-                mavlinkrecvtaskData.state = MAVLINKRECVTASK_STATE_SERVICE_TASKS;
+                attitudecontrollerData.state = ATTITUDECONTROLLER_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case MAVLINKRECVTASK_STATE_SERVICE_TASKS:
+        case ATTITUDECONTROLLER_STATE_SERVICE_TASKS:
         {
-            MAVLinkRecv_Update(NULL);
+            AttitudeController_Update(NULL);
+            
             break;
         }
 

@@ -82,25 +82,25 @@ extern "C" {
 #define SYS_CONSOLE_INDEX_2                       2
 
 /* RX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX2    129
+#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX2    513
 
 /* TX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX2    129
+#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX2    513
 
 /* Console Driver Instance 2 RTOS Configurations*/
-#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX2               256
+#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX2               1024
 #define SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX2                     1
 
 #define SYS_CONSOLE_INDEX_1                       1
 
 /* RX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX1    129
+#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX1    513
 
 /* TX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX1    129
+#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX1    513
 
 /* Console Driver Instance 1 RTOS Configurations*/
-#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX1               256
+#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX1               1024
 #define SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX1                     1
 
 
@@ -122,20 +122,20 @@ extern "C" {
 #define SYS_CONSOLE_DEVICE_MAX_INSTANCES   			3
 #define SYS_CONSOLE_UART_MAX_INSTANCES 	   			1
 #define SYS_CONSOLE_USB_CDC_MAX_INSTANCES 	   		3
-#define SYS_CONSOLE_PRINT_BUFFER_SIZE        		512
+#define SYS_CONSOLE_PRINT_BUFFER_SIZE        		1024
 
 #define SYS_CONSOLE_USB_CDC_READ_WRITE_BUFFER_SIZE 	512
 
 #define SYS_CONSOLE_INDEX_0                       0
 
 /* RX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX0    129
+#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX0    513
 
 /* TX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX0    129
+#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX0    513
 
 /* Console Driver Instance 0 RTOS Configurations*/
-#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX0               256
+#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX0               512
 #define SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX0                     1
 
 

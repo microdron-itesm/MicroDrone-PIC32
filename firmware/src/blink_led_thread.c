@@ -162,13 +162,13 @@ void BLINK_LED_THREAD_Tasks ( void )
                 double backRight = angleDistance(0, angle) / M_PI;
                 double backLeft = angleDistance(M_PI + M_PI / 2.0, angle) / M_PI;
                 
-                OCMP3_CompareSecondaryValueSet(backLeft * (double) 0x4FFF); //BackLeft
-                OCMP6_CompareSecondaryValueSet(topLeft * (double) 0x4FFF); //Top Left
-                OCMP4_CompareSecondaryValueSet(topRight * (double) 0x4FFF); //Top Right
-                OCMP5_CompareSecondaryValueSet(backRight * (double) 0x4FFF); //BackRight
-                SYS_DEBUG_PRINT(SYS_ERROR_DEBUG, "TopLeft: %f\r\n", topLeft);
+                //OCMP3_CompareSecondaryValueSet(backLeft * (double) 0x4FFF); //BackLeft
+                //OCMP6_CompareSecondaryValueSet(topLeft * (double) 0x4FFF); //Top Left
+                //OCMP4_CompareSecondaryValueSet(topRight * (double) 0x4FFF); //Top Right
+                //OCMP5_CompareSecondaryValueSet(backRight * (double) 0x4FFF); //BackRight
+                //SYS_DEBUG_PRINT(SYS_ERROR_DEBUG, "TopLeft: %f\r\n", topLeft);
             } else{
-                SYS_DEBUG_MESSAGE(SYS_ERROR_DEBUG, "Button Pressed!\r\n");
+                SYS_DEBUG_MESSAGE(SYS_ERROR_DEBUG, "Button Pressed!\n");
             }
             
             break;

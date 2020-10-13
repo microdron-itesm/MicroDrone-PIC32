@@ -80,6 +80,9 @@
 #include "heartbeat_led_task.h"
 #include "mavlinkrecvtask.h"
 #include "mavlinksendtask.h"
+#include "mavlinkstatustask.h"
+#include "simulatorcommsupdatetask.h"
+#include "attitudecontroller.h"
 
 
 

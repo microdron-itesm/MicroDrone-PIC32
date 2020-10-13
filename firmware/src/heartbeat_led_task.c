@@ -117,6 +117,7 @@ void HEARTBEAT_LED_TASK_Tasks ( void )
         case HEARTBEAT_LED_TASK_STATE_INIT:
         {
             bool appInitialized = true;
+            STATUS_LED_Toggle();
 
 
             if (appInitialized)

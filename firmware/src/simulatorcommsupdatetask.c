@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    mavlinkrecvtask.c
+    simulatorcommsupdatetask.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,8 +27,10 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "mavlinkrecvtask.h"
-#include "Tasks/MAVLink/MAVLinkRecvTask.h"
+#include "simulatorcommsupdatetask.h"
+#include "SimCommsUpdateTask/SimCommsUpdateTask.h"
+#include "simulatorComms.h"
+#include "definitions.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -46,12 +48,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the MAVLINKRECVTASK_Initialize function.
+    This structure should be initialized by the SIMULATORCOMMSUPDATETASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
+SIMULATORCOMMSUPDATETASK_DATA simulatorcommsupdatetaskData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -71,7 +73,8 @@ MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
 
 /* TODO:  Add any necessary local functions.
 */
-
+extern QueueHandle_t g_mavLinkSIMSendQueue;
+static mavlink_message_t msg;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -81,16 +84,16 @@ MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
 
 /*******************************************************************************
   Function:
-    void MAVLINKRECVTASK_Initialize ( void )
+    void SIMULATORCOMMSUPDATETASK_Initialize ( void )
 
   Remarks:
-    See prototype in mavlinkrecvtask.h.
+    See prototype in simulatorcommsupdatetask.h.
  */
 
-void MAVLINKRECVTASK_Initialize ( void )
+void SIMULATORCOMMSUPDATETASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    mavlinkrecvtaskData.state = MAVLINKRECVTASK_STATE_INIT;
+    simulatorcommsupdatetaskData.state = SIMULATORCOMMSUPDATETASK_STATE_INIT;
 
 
 
@@ -102,36 +105,42 @@ void MAVLINKRECVTASK_Initialize ( void )
 
 /******************************************************************************
   Function:
-    void MAVLINKRECVTASK_Tasks ( void )
+    void SIMULATORCOMMSUPDATETASK_Tasks ( void )
 
   Remarks:
-    See prototype in mavlinkrecvtask.h.
+    See prototype in simulatorcommsupdatetask.h.
  */
 
-void MAVLINKRECVTASK_Tasks ( void )
+void SIMULATORCOMMSUPDATETASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( mavlinkrecvtaskData.state )
+    switch ( simulatorcommsupdatetaskData.state )
     {
         /* Application's initial state. */
-        case MAVLINKRECVTASK_STATE_INIT:
+        case SIMULATORCOMMSUPDATETASK_STATE_INIT:
         {
             bool appInitialized = true;
             
-            MAVLinkRecv_Init(NULL);
+            g_mavLinkSIMSendQueue = xQueueCreate(10, sizeof(mavlink_message_t));
             
+            hal_sim_comms_init(NULL);
+            SimCommsUpdate_Init(NULL);
+
+
             if (appInitialized)
             {
 
-                mavlinkrecvtaskData.state = MAVLINKRECVTASK_STATE_SERVICE_TASKS;
+                simulatorcommsupdatetaskData.state = SIMULATORCOMMSUPDATETASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case MAVLINKRECVTASK_STATE_SERVICE_TASKS:
+        case SIMULATORCOMMSUPDATETASK_STATE_SERVICE_TASKS:
         {
-            MAVLinkRecv_Update(NULL);
+            SimCommsUpdate_Update(NULL);
+            mavlink_msg_heartbeat_pack(1, MAV_COMP_ID_AUTOPILOT1, &msg, MAV_TYPE_QUADROTOR, MAV_AUTOPILOT_GENERIC,   MAV_MODE_FLAG_MANUAL_INPUT_ENABLED |  MAV_MODE_MANUAL_ARMED | MAV_MODE_FLAG_CUSTOM_MODE_ENABLED, 0xDEAD, MAV_STATE_ACTIVE);
+            sendSIM_MAVLinkMessage(&msg);
             break;
         }
 

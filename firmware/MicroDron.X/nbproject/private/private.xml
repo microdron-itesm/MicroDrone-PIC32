@@ -3,11 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/HAL/comms.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/PIC/comms.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/PIC/simulatorComms.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/PIC/imu.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/SimCommsUpdateTask/SimCommsUpdateTask.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/src/MAVLink/MAVLinkHandler.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/src/MAVLink/MAVLinkSender.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/src/Tasks/MAVStatusTask.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/src/Tasks/MAVLink/MAVLinkSendTask.h</file>
             <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/config/default/initialization.c</file>
             <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/config/default/system/console/src/sys_console.c</file>
             <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/blink_led_thread.c</file>
             <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/config/default/system/console/sys_console.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/mavlinksendtask.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/comms.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/mavlinkrecvtask.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/mavlinkstatustask.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/imu.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/motors.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/tof.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/simulatorComms.h</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/SimCommsUpdateTask/SimCommsUpdateTask.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/heartbeat_led_task.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/src/simulatorcommsupdatetask.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/SIM/sim.c</file>
+            <file>file:/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDrone-Firmware/HAL/SIM/sim.h</file>
         </group>
     </open-files>
 </project-private>

@@ -2,10 +2,27 @@
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
     <logicalFolder name="HAL" displayName="HAL" projectFiles="true">
+      <logicalFolder name="PIC" displayName="PIC" projectFiles="true">
+        <itemPath>../MicroDrone-Firmware/HAL/PIC/simulatorComms.c</itemPath>
+        <itemPath>../MicroDrone-Firmware/HAL/PIC/comms.c</itemPath>
+        <itemPath>../MicroDrone-Firmware/HAL/PIC/tof.c</itemPath>
+        <itemPath>../MicroDrone-Firmware/HAL/PIC/motors.c</itemPath>
+        <itemPath>../MicroDrone-Firmware/HAL/PIC/imu.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="SIM" displayName="SIM" projectFiles="true">
+        <itemPath>../MicroDrone-Firmware/HAL/SIM/sim.h</itemPath>
+        <itemPath>../MicroDrone-Firmware/HAL/SIM/sim.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="SimCommsUpdateTask"
+                     displayName="SimCommsUpdateTask"
+                     projectFiles="true">
+        <itemPath>../MicroDrone-Firmware/HAL/SimCommsUpdateTask/SimCommsUpdateTask.c</itemPath>
+      </logicalFolder>
       <itemPath>../MicroDrone-Firmware/HAL/tof.h</itemPath>
       <itemPath>../MicroDrone-Firmware/HAL/comms.h</itemPath>
       <itemPath>../MicroDrone-Firmware/HAL/motors.h</itemPath>
       <itemPath>../MicroDrone-Firmware/HAL/imu.h</itemPath>
+      <itemPath>../MicroDrone-Firmware/HAL/simulatorComms.h</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -184,6 +201,9 @@
       <itemPath>../src/heartbeat_led_task.h</itemPath>
       <itemPath>../src/mavlinkrecvtask.h</itemPath>
       <itemPath>../src/mavlinksendtask.h</itemPath>
+      <itemPath>../src/mavlinkstatustask.h</itemPath>
+      <itemPath>../src/simulatorcommsupdatetask.h</itemPath>
+      <itemPath>../src/attitudecontroller.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -841,6 +861,9 @@
       <itemPath>../src/heartbeat_led_task.c</itemPath>
       <itemPath>../src/mavlinkrecvtask.c</itemPath>
       <itemPath>../src/mavlinksendtask.c</itemPath>
+      <itemPath>../src/mavlinkstatustask.c</itemPath>
+      <itemPath>../src/simulatorcommsupdatetask.c</itemPath>
+      <itemPath>../src/attitudecontroller.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -850,7 +873,6 @@
       <itemPath>../src/config/default/default.xml</itemPath>
       <itemPath>../src/config/default/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
-    <itemPath>../src/HAL/comms.c</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -1193,6 +1215,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
+        <property key="programmerToGoFilePath"
+                  value="/home/abiel/Documents/DronTec/MicroDrone-PIC32/firmware/MicroDron.X/debug/default/MicroDron_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

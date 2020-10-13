@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    mavlinkrecvtask.c
+    mavlinkstatustask.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,8 +27,8 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "mavlinkrecvtask.h"
-#include "Tasks/MAVLink/MAVLinkRecvTask.h"
+#include "mavlinkstatustask.h"
+#include "Tasks/MAVStatusTask.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -46,12 +46,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the MAVLINKRECVTASK_Initialize function.
+    This structure should be initialized by the MAVLINKSTATUSTASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
+MAVLINKSTATUSTASK_DATA mavlinkstatustaskData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -81,16 +81,16 @@ MAVLINKRECVTASK_DATA mavlinkrecvtaskData;
 
 /*******************************************************************************
   Function:
-    void MAVLINKRECVTASK_Initialize ( void )
+    void MAVLINKSTATUSTASK_Initialize ( void )
 
   Remarks:
-    See prototype in mavlinkrecvtask.h.
+    See prototype in mavlinkstatustask.h.
  */
 
-void MAVLINKRECVTASK_Initialize ( void )
+void MAVLINKSTATUSTASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    mavlinkrecvtaskData.state = MAVLINKRECVTASK_STATE_INIT;
+    mavlinkstatustaskData.state = MAVLINKSTATUSTASK_STATE_INIT;
 
 
 
@@ -102,36 +102,38 @@ void MAVLINKRECVTASK_Initialize ( void )
 
 /******************************************************************************
   Function:
-    void MAVLINKRECVTASK_Tasks ( void )
+    void MAVLINKSTATUSTASK_Tasks ( void )
 
   Remarks:
-    See prototype in mavlinkrecvtask.h.
+    See prototype in mavlinkstatustask.h.
  */
 
-void MAVLINKRECVTASK_Tasks ( void )
+void MAVLINKSTATUSTASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( mavlinkrecvtaskData.state )
+    switch ( mavlinkstatustaskData.state )
     {
         /* Application's initial state. */
-        case MAVLINKRECVTASK_STATE_INIT:
+        case MAVLINKSTATUSTASK_STATE_INIT:
         {
             bool appInitialized = true;
             
-            MAVLinkRecv_Init(NULL);
-            
+            MAVStatus_Init(NULL);
+
+
             if (appInitialized)
             {
 
-                mavlinkrecvtaskData.state = MAVLINKRECVTASK_STATE_SERVICE_TASKS;
+                mavlinkstatustaskData.state = MAVLINKSTATUSTASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case MAVLINKRECVTASK_STATE_SERVICE_TASKS:
+        case MAVLINKSTATUSTASK_STATE_SERVICE_TASKS:
         {
-            MAVLinkRecv_Update(NULL);
+            MAVStatus_Update(NULL);
+
             break;
         }
 

@@ -72,10 +72,7 @@ MAVLINKSENDTASK_DATA mavlinksendtaskData;
 
 /* TODO:  Add any necessary local functions.
 */
-static mavlink_message_t msg;
 QueueHandle_t g_mavLinkSendQueue;
-
-static float temp = 0;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -124,7 +121,7 @@ void MAVLINKSENDTASK_Tasks ( void )
         {
             bool appInitialized = true;
             
-            g_mavLinkSendQueue = xQueueCreate(30, sizeof(mavlink_message_t));
+            g_mavLinkSendQueue = xQueueCreate(10, sizeof(mavlink_message_t));
             MAVLinkSend_Init(NULL);
 
 
@@ -138,14 +135,6 @@ void MAVLINKSENDTASK_Tasks ( void )
 
         case MAVLINKSENDTASK_STATE_SERVICE_TASKS:
         {
-            mavlink_msg_heartbeat_pack(1, MAV_COMP_ID_AUTOPILOT1, &msg, MAV_TYPE_QUADROTOR, MAV_AUTOPILOT_GENERIC,   MAV_MODE_FLAG_MANUAL_INPUT_ENABLED |  MAV_MODE_MANUAL_ARMED | MAV_MODE_FLAG_CUSTOM_MODE_ENABLED, 0xDEAD, MAV_STATE_ACTIVE);
-            sendMAVLinkMessage(&msg);
-            
-            mavlink_msg_attitude_pack(1, 200, &msg, 1, temp ,temp / 2.0,-temp, 0, 0, 0);
-            sendMAVLinkMessage(&msg);
-            temp += 1.;
-            if(temp > 1e6) temp = 0;
-            
             MAVLinkSend_Update(NULL);
             break;
         }

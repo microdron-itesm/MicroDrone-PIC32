@@ -155,6 +155,41 @@ void _MAVLINKSENDTASK_Tasks(  void *pvParameters  )
         vTaskDelay(10 / portTICK_PERIOD_MS);
     }
 }
+/* Handle for the MAVLINKSTATUSTASK_Tasks. */
+TaskHandle_t xMAVLINKSTATUSTASK_Tasks;
+
+void _MAVLINKSTATUSTASK_Tasks(  void *pvParameters  )
+{   
+    while(1)
+    {
+        MAVLINKSTATUSTASK_Tasks();
+        vTaskDelay(10 / portTICK_PERIOD_MS);
+    }
+}
+/* Handle for the SIMULATORCOMMSUPDATETASK_Tasks. */
+TaskHandle_t xSIMULATORCOMMSUPDATETASK_Tasks;
+
+void _SIMULATORCOMMSUPDATETASK_Tasks(  void *pvParameters  )
+{   
+    while(1)
+    {
+        SIMULATORCOMMSUPDATETASK_Tasks();
+        vTaskDelay(5 / portTICK_PERIOD_MS);
+    }
+}
+/* Handle for the ATTITUDECONTROLLER_Tasks. */
+TaskHandle_t xATTITUDECONTROLLER_Tasks;
+
+void _ATTITUDECONTROLLER_Tasks(  void *pvParameters  )
+{   
+    portTASK_USES_FLOATING_POINT();
+    
+    while(1)
+    {
+        ATTITUDECONTROLLER_Tasks();
+        vTaskDelay(10 / portTICK_PERIOD_MS);
+    }
+}
 
 
 
@@ -247,7 +282,7 @@ void SYS_Tasks ( void )
                 "MAVLINKRECVTASK_Tasks",
                 1024,
                 NULL,
-                2,
+                3,
                 &xMAVLINKRECVTASK_Tasks);
 
     /* Create OS Thread for MAVLINKSENDTASK_Tasks. */
@@ -257,6 +292,30 @@ void SYS_Tasks ( void )
                 NULL,
                 3,
                 &xMAVLINKSENDTASK_Tasks);
+
+    /* Create OS Thread for MAVLINKSTATUSTASK_Tasks. */
+    xTaskCreate((TaskFunction_t) _MAVLINKSTATUSTASK_Tasks,
+                "MAVLINKSTATUSTASK_Tasks",
+                1024,
+                NULL,
+                2,
+                &xMAVLINKSTATUSTASK_Tasks);
+
+    /* Create OS Thread for SIMULATORCOMMSUPDATETASK_Tasks. */
+    xTaskCreate((TaskFunction_t) _SIMULATORCOMMSUPDATETASK_Tasks,
+                "SIMULATORCOMMSUPDATETASK_Tasks",
+                1024,
+                NULL,
+                1,
+                &xSIMULATORCOMMSUPDATETASK_Tasks);
+
+    /* Create OS Thread for ATTITUDECONTROLLER_Tasks. */
+    xTaskCreate((TaskFunction_t) _ATTITUDECONTROLLER_Tasks,
+                "ATTITUDECONTROLLER_Tasks",
+                1024,
+                NULL,
+                1,
+                &xATTITUDECONTROLLER_Tasks);
 
 
 

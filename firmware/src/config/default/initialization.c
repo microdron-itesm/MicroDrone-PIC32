@@ -387,6 +387,9 @@ void SYS_Initialize ( void* data )
     HEARTBEAT_LED_TASK_Initialize();
     MAVLINKRECVTASK_Initialize();
     MAVLINKSENDTASK_Initialize();
+    MAVLINKSTATUSTASK_Initialize();
+    SIMULATORCOMMSUPDATETASK_Initialize();
+    ATTITUDECONTROLLER_Initialize();
 
 
     EVIC_Initialize();
