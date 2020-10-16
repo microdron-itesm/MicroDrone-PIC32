@@ -93,15 +93,8 @@ extern "C" {
 
 #define SYS_CONSOLE_INDEX_1                       1
 
-/* RX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX1    513
 
-/* TX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX1    513
 
-/* Console Driver Instance 1 RTOS Configurations*/
-#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX1               1024
-#define SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX1                     1
 
 
 #define SYS_DEBUG_ENABLE
@@ -120,7 +113,7 @@ extern "C" {
 #define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (620)
 
 #define SYS_CONSOLE_DEVICE_MAX_INSTANCES   			3
-#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			1
+#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			2
 #define SYS_CONSOLE_USB_CDC_MAX_INSTANCES 	   		3
 #define SYS_CONSOLE_PRINT_BUFFER_SIZE        		1024
 
@@ -128,15 +121,8 @@ extern "C" {
 
 #define SYS_CONSOLE_INDEX_0                       0
 
-/* RX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX0    513
 
-/* TX buffer size has one additional element for the empty spot needed in circular buffer */
-#define SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX0    513
 
-/* Console Driver Instance 0 RTOS Configurations*/
-#define SYS_CONSOLE_RTOS_STACK_SIZE_IDX0               512
-#define SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX0                     1
 
 
 
@@ -167,7 +153,11 @@ extern "C" {
 /* Enable SOF Events */
 #define USB_DEVICE_SOF_EVENT_ENABLE
 
+/* Enable Set descriptor events */
+#define USB_DEVICE_SET_DESCRIPTOR_EVENT_ENABLE
 
+/* Enable Synch Frame Event */
+#define USB_DEVICE_SYNCH_FRAME_EVENT_ENABLE
 
 
 

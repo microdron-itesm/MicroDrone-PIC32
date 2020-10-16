@@ -31,6 +31,7 @@
 #include "SimCommsUpdateTask/SimCommsUpdateTask.h"
 #include "simulatorComms.h"
 #include "definitions.h"
+#include "SIM/sim.h"
 
 // *****************************************************************************
 // *****************************************************************************

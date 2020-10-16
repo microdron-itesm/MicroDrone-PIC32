@@ -69,16 +69,6 @@ void _SYS_CONSOLE_2_Tasks(  void *pvParameters  )
 }
 
 
-void _SYS_CONSOLE_1_Tasks(  void *pvParameters  )
-{
-    while(1)
-    {
-        SYS_CONSOLE_Tasks(SYS_CONSOLE_INDEX_1);
-        vTaskDelay(10 / portTICK_PERIOD_MS);
-    }
-}
-
-
 void _USB_DEVICE_Tasks(  void *pvParameters  )
 {
     while(1)
@@ -99,16 +89,6 @@ void _DRV_USBHS_Tasks(  void *pvParameters  )
     }
 }
 
-void _SYS_CONSOLE_0_Tasks(  void *pvParameters  )
-{
-    while(1)
-    {
-        SYS_CONSOLE_Tasks(SYS_CONSOLE_INDEX_0);
-        vTaskDelay(10 / portTICK_PERIOD_MS);
-    }
-}
-
-
 /* Handle for the BLINK_LED_THREAD_Tasks. */
 TaskHandle_t xBLINK_LED_THREAD_Tasks;
 
@@ -119,7 +99,7 @@ void _BLINK_LED_THREAD_Tasks(  void *pvParameters  )
     while(1)
     {
         BLINK_LED_THREAD_Tasks();
-        vTaskDelay(5 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the HEARTBEAT_LED_TASK_Tasks. */
@@ -152,7 +132,7 @@ void _MAVLINKSENDTASK_Tasks(  void *pvParameters  )
     while(1)
     {
         MAVLINKSENDTASK_Tasks();
-        vTaskDelay(10 / portTICK_PERIOD_MS);
+        vTaskDelay(5 / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the MAVLINKSTATUSTASK_Tasks. */
@@ -174,7 +154,7 @@ void _SIMULATORCOMMSUPDATETASK_Tasks(  void *pvParameters  )
     while(1)
     {
         SIMULATORCOMMSUPDATETASK_Tasks();
-        vTaskDelay(5 / portTICK_PERIOD_MS);
+        vTaskDelay(10 / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the ATTITUDECONTROLLER_Tasks. */
@@ -218,21 +198,7 @@ void SYS_Tasks ( void )
         (TaskHandle_t*)NULL
     );
 
-    xTaskCreate( _SYS_CONSOLE_1_Tasks,
-        "SYS_CONSOLE_1_TASKS",
-        SYS_CONSOLE_RTOS_STACK_SIZE_IDX1,
-        (void*)NULL,
-        SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX1,
-        (TaskHandle_t*)NULL
-    );
 
-    xTaskCreate( _SYS_CONSOLE_0_Tasks,
-        "SYS_CONSOLE_0_TASKS",
-        SYS_CONSOLE_RTOS_STACK_SIZE_IDX0,
-        (void*)NULL,
-        SYS_CONSOLE_RTOS_TASK_PRIORITY_IDX0,
-        (TaskHandle_t*)NULL
-    );
 
 
 
@@ -264,15 +230,15 @@ void SYS_Tasks ( void )
         /* Create OS Thread for BLINK_LED_THREAD_Tasks. */
     xTaskCreate((TaskFunction_t) _BLINK_LED_THREAD_Tasks,
                 "BLINK_LED_THREAD_Tasks",
-                1024,
+                256,
                 NULL,
-                1,
+                0,
                 &xBLINK_LED_THREAD_Tasks);
 
     /* Create OS Thread for HEARTBEAT_LED_TASK_Tasks. */
     xTaskCreate((TaskFunction_t) _HEARTBEAT_LED_TASK_Tasks,
                 "HEARTBEAT_LED_TASK_Tasks",
-                64,
+                256,
                 NULL,
                 0,
                 &xHEARTBEAT_LED_TASK_Tasks);
@@ -280,7 +246,7 @@ void SYS_Tasks ( void )
     /* Create OS Thread for MAVLINKRECVTASK_Tasks. */
     xTaskCreate((TaskFunction_t) _MAVLINKRECVTASK_Tasks,
                 "MAVLINKRECVTASK_Tasks",
-                1024,
+                8016,
                 NULL,
                 3,
                 &xMAVLINKRECVTASK_Tasks);
@@ -288,7 +254,7 @@ void SYS_Tasks ( void )
     /* Create OS Thread for MAVLINKSENDTASK_Tasks. */
     xTaskCreate((TaskFunction_t) _MAVLINKSENDTASK_Tasks,
                 "MAVLINKSENDTASK_Tasks",
-                4024,
+                8016,
                 NULL,
                 3,
                 &xMAVLINKSENDTASK_Tasks);
@@ -296,25 +262,25 @@ void SYS_Tasks ( void )
     /* Create OS Thread for MAVLINKSTATUSTASK_Tasks. */
     xTaskCreate((TaskFunction_t) _MAVLINKSTATUSTASK_Tasks,
                 "MAVLINKSTATUSTASK_Tasks",
-                1024,
+                2048,
                 NULL,
-                2,
+                1,
                 &xMAVLINKSTATUSTASK_Tasks);
 
     /* Create OS Thread for SIMULATORCOMMSUPDATETASK_Tasks. */
     xTaskCreate((TaskFunction_t) _SIMULATORCOMMSUPDATETASK_Tasks,
                 "SIMULATORCOMMSUPDATETASK_Tasks",
-                1024,
+                2048,
                 NULL,
-                1,
+                3,
                 &xSIMULATORCOMMSUPDATETASK_Tasks);
 
     /* Create OS Thread for ATTITUDECONTROLLER_Tasks. */
     xTaskCreate((TaskFunction_t) _ATTITUDECONTROLLER_Tasks,
                 "ATTITUDECONTROLLER_Tasks",
-                1024,
+                2048,
                 NULL,
-                1,
+                4,
                 &xATTITUDECONTROLLER_Tasks);
 
 

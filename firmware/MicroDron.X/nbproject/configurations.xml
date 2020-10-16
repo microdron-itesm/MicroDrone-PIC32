@@ -111,6 +111,7 @@
             <logicalFolder name="f8" displayName="uart" projectFiles="true">
               <itemPath>../src/config/default/peripheral/uart/plib_uart_common.h</itemPath>
               <itemPath>../src/config/default/peripheral/uart/plib_uart1.h</itemPath>
+              <itemPath>../src/config/default/peripheral/uart/plib_uart2.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f3" displayName="system" projectFiles="true">
@@ -744,6 +745,7 @@
             </logicalFolder>
             <logicalFolder name="f8" displayName="uart" projectFiles="true">
               <itemPath>../src/config/default/peripheral/uart/plib_uart1.c</itemPath>
+              <itemPath>../src/config/default/peripheral/uart/plib_uart2.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f4" displayName="stdio" projectFiles="true">
@@ -757,6 +759,9 @@
               <itemPath>../src/config/default/system/console/src/sys_console_usb_cdc.h</itemPath>
               <itemPath>../src/config/default/system/console/src/sys_console_usb_cdc_definitions.h</itemPath>
               <itemPath>../src/config/default/system/console/src/sys_console_usb_cdc.c</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console_uart.h</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console_uart_definitions.h</itemPath>
+              <itemPath>../src/config/default/system/console/src/sys_console_uart.c</itemPath>
               <itemPath>../src/config/default/system/console/src/sys_console.c</itemPath>
               <itemPath>../src/config/default/system/console/src/sys_console_local.h</itemPath>
             </logicalFolder>
@@ -816,7 +821,7 @@
         <logicalFolder name="f1" displayName="Source" projectFiles="true">
           <logicalFolder name="f1" displayName="portable" projectFiles="true">
             <logicalFolder name="f1" displayName="MemMang" projectFiles="true">
-              <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c</itemPath>
+              <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f2" displayName="MPLAB" projectFiles="true">
               <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
@@ -939,7 +944,7 @@
         <property key="isolate-each-function" value="true"/>
         <property key="make-warnings-into-errors" value="false"/>
         <property key="optimization-level" value="-O1"/>
-        <property key="place-data-into-section" value="false"/>
+        <property key="place-data-into-section" value="true"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros" value=""/>

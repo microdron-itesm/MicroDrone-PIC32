@@ -65,6 +65,7 @@
 #include "peripheral/coretimer/plib_coretimer.h"
 #include "driver/usb/usbhs/drv_usbhs.h"
 #include "peripheral/uart/plib_uart1.h"
+#include "peripheral/uart/plib_uart2.h"
 #include "peripheral/tmr/plib_tmr2.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"

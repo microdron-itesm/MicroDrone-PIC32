@@ -71,6 +71,9 @@ void UART1_TX_InterruptHandler( void );
 void DRV_USBHS_InterruptHandler( void );
 void DRV_USBHS_DMAInterruptHandler( void );
 void DMA0_InterruptHandler( void );
+void UART2_FAULT_InterruptHandler( void );
+void UART2_RX_InterruptHandler( void );
+void UART2_TX_InterruptHandler( void );
 
 
 
@@ -135,6 +138,21 @@ void USB_DMA_Handler (void)
 void DMA0_Handler (void)
 {
     DMA0_InterruptHandler();
+}
+
+void UART2_FAULT_Handler (void)
+{
+    UART2_FAULT_InterruptHandler();
+}
+
+void UART2_RX_Handler (void)
+{
+    UART2_RX_InterruptHandler();
+}
+
+void UART2_TX_Handler (void)
+{
+    UART2_TX_InterruptHandler();
 }
 
 
